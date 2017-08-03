@@ -1,0 +1,291 @@
+
+
+        <div class="logo">
+            <div class="logo-normal">
+                <a href="https://www.creative-tim.com" class="simple-text">
+                    Creative Tim
+                </a>
+            </div>
+
+            <div class="logo-img">
+                <img src="/assets/img/angular2-logo-white.png"/>
+            </div>
+        </div>
+
+
+        <div class="sidebar-wrapper">
+
+            <div class="user">
+                <div class="photo">
+                    <img src="../assets/img/faces/avatar.jpg" />
+                </div>
+                <div class="info">
+                    <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+                        <span>
+                            Tania Andrew
+                            <b class="caret"></b>
+                        </span>
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                        <ul class="nav">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <span class="sidebar-mini">MP</span>
+                                    <span class="sidebar-normal">My Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <span class="sidebar-mini">EP</span>
+                                    <span class="sidebar-normal">Edit Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <span class="sidebar-mini">S</span>
+                                    <span class="sidebar-normal">Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-container">
+                <ul class="nav">
+                    <li routerLinkActive="active">
+                        <a  [routerLink]="[menuItems[0].path]">
+                            <i class="{{menuItems[0].icon}}">dashboard</i>
+                            <p>{{menuItems[0].title}}</p>
+                        </a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a data-toggle="collapse" href="#componentsExamples">
+                            <i class="material-icons">apps</i>
+                            <p>Components
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div class="collapse" id="componentsExamples">
+                            <ul class="nav">
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[3].path]">
+                                        <span class="sidebar-mini">B</span>
+                                        <span class="sidebar-normal">{{menuItems[3].title}}</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[4].path]">
+
+                                        <span class="sidebar-mini">GS</span>
+                                        <span class="sidebar-normal">{{menuItems[4].title}}</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[5].path]">
+                                        <span class="sidebar-mini">P</span>
+                                        <span class="sidebar-normal">{{menuItems[5].title}}</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[6].path]">
+                                        <span class="sidebar-mini">SA</span>
+                                        <span class="sidebar-normal">{{menuItems[6].title}}</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[7].path]">
+                                        <span class="sidebar-mini">N</span>
+                                        <span class="sidebar-normal">{{menuItems[7].title}}</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[8].path]">
+                                        <span class="sidebar-mini">I</span>
+                                        <span class="sidebar-normal">{{menuItems[8].title}}</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[9].path]">
+                                        <span class="sidebar-mini">T</span>
+                                        <span class="sidebar-normal">{{menuItems[9].title}}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li routerLinkActive="active">
+                        <a data-toggle="collapse" href="#formsExamples">
+                            <i class="material-icons">content_paste</i>
+                            <p>Forms
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div class="collapse" id="formsExamples">
+                            <ul class="nav">
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[10].path]">
+                                        <span class="sidebar-mini">RF</span>
+                                        <span class="sidebar-normal">{{menuItems[10].title}}</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[11].path]">
+                                        <span class="sidebar-mini">EF</span>
+                                        <span class="sidebar-normal">{{menuItems[11].title}}</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[12].path]">
+                                        <span class="sidebar-mini">VF</span>
+                                        <span class="sidebar-normal">{{menuItems[12].title}}</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[13].path]">
+                                        <span class="sidebar-mini">W</span>
+                                        <span class="sidebar-normal">{{menuItems[13].title}}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li routerLinkActive="active">
+                        <a data-toggle="collapse" href="#tablesExamples">
+                            <i class="material-icons">grid_on</i>
+                            <p>Tables
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div class="collapse" id="tablesExamples">
+                            <ul class="nav">
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[14].path]">
+                                        <span class="sidebar-mini">RT</span>
+                                        <span class="sidebar-normal">{{menuItems[14].title}}</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[15].path]">
+                                        <span class="sidebar-mini">ET</span>
+                                        <span class="sidebar-normal">{{menuItems[15].title}}</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[16].path]">
+                                        <span class="sidebar-mini">DT</span>
+                                        <span class="sidebar-normal">{{menuItems[16].title}}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li routerLinkActive="active">
+                        <a data-toggle="collapse" href="#mapsExamples">
+                            <i class="material-icons">place</i>
+                            <p>Maps
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div class="collapse" id="mapsExamples">
+                            <ul class="nav">
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[17].path]">
+                                        <span class="sidebar-mini">GM</span>
+                                        <span class="sidebar-normal">{{menuItems[17].title}}</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[18].path]">
+                                        <span class="sidebar-mini">FSM</span>
+                                        <span class="sidebar-normal">{{menuItems[18].title}}</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[19].path]">
+                                        <span class="sidebar-mini">VM</span>
+                                        <span class="sidebar-normal">{{menuItems[19].title}}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li routerLinkActive="active">
+                        <a  [routerLink]="[menuItems[20].path]">
+                            <i class="{{menuItems[20].icon}}">widgets</i>
+
+                            <p>{{menuItems[20].title}}</p>
+                        </a>
+                    </li>
+
+                    <li routerLinkActive="active">
+                        <a  [routerLink]="[menuItems[21].path]">
+                            <i class="{{menuItems[21].icon}}">timeline</i>
+
+                            <p>{{menuItems[21].title}}</p>
+                        </a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a  [routerLink]="[menuItems[22].path]">
+                            <i class="{{menuItems[22].icon}}">date_range</i>
+
+                            <p>{{menuItems[22].title}}</p>
+                        </a>
+                    </li>
+
+                    <li routerLinkActive="active">
+                        <a data-toggle="collapse" href="#pagesExamples">
+                            <i class="material-icons">image</i>
+                            <p>Pages
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div class="collapse" id="pagesExamples">
+                            <ul class="nav">
+                                <li>
+                                    <a  href="./pricing.html">
+                                        <span class="sidebar-mini">P</span>
+                                        <span class="sidebar-normal">Pricing</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a [routerLink]="[menuItems[1].path]">
+                                        <span class="sidebar-mini">T</span>
+                                        <span class="sidebar-normal">{{menuItems[1].title}}</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  href="./login.html">
+                                        <span class="sidebar-mini">LP</span>
+                                        <span class="sidebar-normal">Login Page</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  href="./register.html">
+                                        <span class="sidebar-mini">RP</span>
+                                        <span class="sidebar-normal">Register Page</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  href="./lock.html">
+                                        <span class="sidebar-mini">LSP</span>
+                                        <span class="sidebar-normal">Lock Screen Page</span>
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a  [routerLink]="[menuItems[2].path]">
+                                        <span class="sidebar-mini">UP</span>
+                                        <span class="sidebar-normal">{{menuItems[2].title}}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
